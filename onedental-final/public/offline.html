@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin Conexión - OneDental Zaragoza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .features {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .features h3 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .features li::before {
+            content: "🦷";
+            margin-right: 0.5rem;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .retry-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 1rem;
+        }
+        
+        .retry-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+        
+        .status {
+            margin-top: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .online {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+        }
+        
+        .offline {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .checking {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🦷</div>
+        <h1>Sin Conexión a Internet</h1>
+        <p>No te preocupes, OneDental sigue contigo incluso sin conexión. 
+           Cuando recuperes la conexión, podrás acceder a todas nuestras funcionalidades.</p>
+        
+        <div class="features">
+            <h3>🌟 Servicios OneDental</h3>
+            <ul>
+                <li>Digital Smile Design desde 2,500€</li>
+                <li>Implantes dentales desde 1,200€</li>
+                <li>Carillas de porcelana desde 450€</li>
+                <li>Blanqueamiento dental desde 350€</li>
+                <li>Ortodoncia completa desde 2,800€</li>
+                <li>Primera consulta GRATUITA</li>
+            </ul>
+        </div>
+        
+        <div class="contact-info">
+            <h3>📞 Información de Contacto</h3>
+            <p><strong>Teléfono:</strong> 976 527 761</p>
+            <p><strong>Dirección:</strong> Calle Pablo Neruda 17, Zaragoza</p>
+            <p><strong>Email:</strong> info@onedental-zaragoza.com</p>
+            <p><strong>Horario:</strong> L-V 9:00-20:00, S 9:00-14:00</p>
+        </div>
+        
+        <button class="retry-btn" onclick="checkConnection()">
+            🔄 Comprobar Conexión
+        </button>
+        
+        <div id="status" class="status offline">
+            📡 Sin conexión - Modo offline activo
+        </div>
+    </div>
+
+    <script>
+        let isOnline = navigator.onLine;
+        
+        function updateStatus(online) {
+            const status = document.getElementById('status');
+            const retryBtn = document.querySelector('.retry-btn');
+            
+            if (online) {
+                status.className = 'status online';
+                status.innerHTML = '🌐 Conexión restaurada - Redirigiendo...';
+                retryBtn.innerHTML = '✅ Ir a OneDental';
+                retryBtn.onclick = () => window.location.href = '/';
+                
+                // Redireccionar automáticamente después de 2 segundos
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+            } else {
+                status.className = 'status offline';
+                status.innerHTML = '📡 Sin conexión - Modo offline activo';
+                retryBtn.innerHTML = '🔄 Comprobar Conexión';
+                retryBtn.onclick = checkConnection;
+            }
+        }
+        
+        function checkConnection() {
+            const status = document.getElementById('status');
+            const retryBtn = document.querySelector('.retry-btn');
+            
+            status.className = 'status checking';
+            status.innerHTML = '🔍 Comprobando conexión...';
+            retryBtn.innerHTML = '⏳ Comprobando...';
+            retryBtn.disabled = true;
+            
+            // Intentar hacer una petición para verificar la conexión
+            fetch('/', { method: 'HEAD', mode: 'no-cors' })
+                .then(() => {
+                    isOnline = true;
+                    updateStatus(true);
+                })
+                .catch(() => {
+                    setTimeout(() => {
+                        isOnline = false;
+                        updateStatus(false);
+                        retryBtn.disabled = false;
+                    }, 1500);
+                });
+        }
+        
+        // Escuchar eventos de conexión
+        window.addEventListener('online', () => {
+            isOnline = true;
+            updateStatus(true);
+        });
+        
+        window.addEventListener('offline', () => {
+            isOnline = false;
+            updateStatus(false);
+        });
+        
+        // Actualizar estado inicial
+        updateStatus(isOnline);
+        
+        // Comprobar conexión cada 30 segundos
+        setInterval(() => {
+            if (!isOnline) {
+                checkConnection();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>

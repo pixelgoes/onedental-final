@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneDental Zaragoza - Clínica Dental Avanzada</title>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="description" content="La clínica dental más avanzada de Zaragoza. Digital Smile Design, implantes, carillas y más con tecnología de vanguardia." />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="OneDental" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="OneDental" />
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-192x192.jpg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-192x192.jpg" />
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.jpg" />
+  
+  <!-- Splash Screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="OneDental Zaragoza" />
+  <meta name="keywords" content="dentista zaragoza, implantes dentales, carillas porcelana, blanqueamiento dental, digital smile design" />
+  
+  <!-- Social Media -->
+  <meta property="og:title" content="OneDental Zaragoza - Clínica Dental Avanzada" />
+  <meta property="og:description" content="La clínica dental más avanzada de Zaragoza con tecnología Digital Smile Design." />
+  <meta property="og:image" content="/icons/icon-512x512.jpg" />
+  <meta property="og:url" content="https://onedental-zaragoza.com" />
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OneDental Zaragoza" />
+  <meta name="twitter:description" content="Clínica dental avanzada en Zaragoza" />
+  <meta name="twitter:image" content="/icons/icon-512x512.jpg" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registrado exitosamente:', registration);
+            
+            // Verificar actualizaciones cada hora
+            setInterval(() => {
+              registration.update();
+            }, 60000 * 60);
+            
+            // Manejar actualizaciones del service worker
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // Mostrar notificación de actualización disponible
+                  if (confirm('Nueva versión disponible. ¿Actualizar ahora?')) {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch((error) => {
+            console.log('SW registration failed:', error);
+          });
+        
+        // Manejar cambios de conectividad
+        window.addEventListener('online', () => {
+          console.log('Conexión restaurada');
+          document.body.classList.remove('offline');
+        });
+        
+        window.addEventListener('offline', () => {
+          console.log('Sin conexión');
+          document.body.classList.add('offline');
+        });
+      });
+    }
+    
+    // Instalación de PWA
+    let deferredPrompt;
+    
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      
+      // Mostrar botón de instalación personalizado después de 30 segundos
+      setTimeout(() => {
+        if (deferredPrompt) {
+          showInstallBanner();
+        }
+      }, 30000);
+    });
+    
+    function showInstallBanner() {
+      const banner = document.createElement('div');
+      banner.innerHTML = `
+        <div style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #2563eb; color: white; padding: 15px; border-radius: 10px; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <strong>🦷 Instalar OneDental</strong>
+              <p style="margin: 5px 0 0; font-size: 14px;">Accede más rápido a nuestros servicios</p>
+            </div>
+            <div>
+              <button onclick="installPWA()" style="background: white; color: #2563eb; border: none; padding: 8px 16px; border-radius: 5px; margin-right: 10px; cursor: pointer;">Instalar</button>
+              <button onclick="this.parentElement.parentElement.parentElement.remove()" style="background: transparent; color: white; border: 1px solid white; padding: 8px 16px; border-radius: 5px; cursor: pointer;">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(banner);
+    }
+    
+    function installPWA() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((result) => {
+          if (result.outcome === 'accepted') {
+            console.log('PWA instalada');
+          }
+          deferredPrompt = null;
+        });
+      }
+    }
+    
+    // Registrar para notificaciones push (preparado)
+    async function subscribeForPushNotifications() {
+      if ('serviceWorker' in navigator && 'PushManager' in window) {
+        try {
+          const registration = await navigator.serviceWorker.ready;
+          const subscription = await registration.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: 'YOUR_VAPID_PUBLIC_KEY' // Reemplazar con key real
+          });
+          
+          // Enviar subscription al servidor
+          console.log('Push subscription:', subscription);
+        } catch (error) {
+          console.log('Error suscribiéndose a push:', error);
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

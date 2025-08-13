@@ -1,0 +1,285 @@
+{
+  "title": "Nuestras Instalaciones",
+  "description": "OneDental Zaragoza cuenta con instalaciones modernas y tecnología de vanguardia para ofrecerte la mejor atención dental en un ambiente cómodo y seguro.",
+  "introduction": "Nuestras instalaciones han sido diseñadas pensando en tu comodidad y en proporcionar la mejor experiencia dental. Cada área está equipada con tecnología de última generación y cumple con los más altos estándares de seguridad e higiene.",
+  "areas": [
+    {
+      "id": "recepcion",
+      "name": "Recepción OneDental",
+      "description": "Espacio acogedor y moderno donde nuestro equipo te recibe con calidez profesional. Zona de atención al paciente equipada con sistema de gestión digital.",
+      "features": [
+        "Atención personalizada",
+        "Gestión digital de citas",
+        "Información de tratamientos",
+        "Orientación sobre financiación",
+        "Ambiente relajante"
+      ],
+      "image": "/images/clinica-moderna_1.jpg",
+      "highlights": [
+        "Personal especializado en atención al paciente",
+        "Sistema de gestión avanzado",
+        "Información transparente sobre precios",
+        "Facilidades de pago flexibles"
+      ]
+    },
+    {
+      "id": "sala-espera-general",
+      "name": "Sala de Espera General",
+      "description": "Espacio amplio y confortable diseñado para tu relajación antes del tratamiento. Ambiente tranquilo con entretenimiento y información dental.",
+      "features": [
+        "Asientos ergonómicos",
+        "Wi-Fi gratuito",
+        "Revistas especializadas",
+        "Sistema de climatización",
+        "Música ambiental relajante"
+      ],
+      "image": "/images/clinica-moderna_6.png",
+      "highlights": [
+        "Capacidad para 12 personas",
+        "Diseño moderno y acogedor",
+        "Información educativa sobre salud dental",
+        "Ambiente libre de estrés"
+      ]
+    },
+    {
+      "id": "sala-espera-ninos",
+      "name": "Sala de Espera para Niños",
+      "description": "Área especializada para los más pequeños con decoración temática y entretenimiento adaptado para crear una experiencia positiva.",
+      "features": [
+        "Decoración infantil colorida",
+        "Juegos educativos",
+        "Libros de cuentos",
+        "Zona de juegos segura",
+        "Asientos adaptados para familias"
+      ],
+      "image": "/images/clinica-moderna_8.jpg",
+      "highlights": [
+        "Diseño amigable para niños",
+        "Reducción de ansiedad infantil",
+        "Entretenimiento educativo",
+        "Comodidad para acompañantes"
+      ]
+    },
+    {
+      "id": "gabinete-1",
+      "name": "Gabinete 1 - Estética Dental",
+      "description": "Sala especializada en tratamientos estéticos equipada con tecnología de vanguardia para carillas, blanqueamientos y Digital Smile Design.",
+      "features": [
+        "Sillón dental ergonómico",
+        "Iluminación LED especializada",
+        "Cámara intraoral HD",
+        "Sistema de aspiración silencioso",
+        "Tecnología láser dental"
+      ],
+      "image": "/images/tecnologia-dental.jpg",
+      "highlights": [
+        "Especializado en estética dental",
+        "Digital Smile Design integrado",
+        "Iluminación perfecta para procedimientos estéticos",
+        "Comodidad máxima del paciente"
+      ]
+    },
+    {
+      "id": "gabinete-2",
+      "name": "Gabinete 2 - Implantología",
+      "description": "Quirófano especializado para cirugía de implantes con tecnología de cirugía guiada y equipamiento esterilizado de última generación.",
+      "features": [
+        "Equipamiento quirúrgico avanzado",
+        "Sistema de cirugía guiada 3D",
+        "Monitor de constantes vitales",
+        "Sedación consciente disponible",
+        "Instrumental quirúrgico premium"
+      ],
+      "image": "/images/equipo-dental.jpg",
+      "highlights": [
+        "Cirugía de implantes de precisión",
+        "Tecnología 3D para planificación",
+        "Máxima seguridad quirúrgica",
+        "Resultados predecibles"
+      ]
+    },
+    {
+      "id": "gabinete-3",
+      "name": "Gabinete 3 - Tratamientos Generales",
+      "description": "Sala polivalente para tratamientos generales, endodoncias, periodoncias y procedimientos conservadores con máximo confort.",
+      "features": [
+        "Equipamiento multifuncional",
+        "Microscopio dental",
+        "Localizador de ápices",
+        "Sistema rotatorio endodóntico",
+        "Ultrasonidos periodontales"
+      ],
+      "image": "/images/clinica-moderna.jpg",
+      "highlights": [
+        "Versatilidad de tratamientos",
+        "Tecnología conservadora",
+        "Precisión en endodoncias",
+        "Tratamientos periodontales avanzados"
+      ]
+    },
+    {
+      "id": "sala-rayos-x",
+      "name": "Sala de Rayos X",
+      "description": "Área de diagnóstico por imagen con TAC 3D y radiografía panorámica digital para diagnósticos precisos con mínima radiación.",
+      "features": [
+        "TAC dental 3D (CBCT)",
+        "Radiografía panorámica digital",
+        "Radiografía periapical digital",
+        "Sistema de protección radiológica",
+        "Procesado instantáneo de imágenes"
+      ],
+      "image": "/images/tecnologia-dental.jpg",
+      "highlights": [
+        "Diagnóstico 3D de precisión",
+        "Mínima exposición radiológica",
+        "Imágenes instantáneas",
+        "Planificación quirúrgica avanzada"
+      ]
+    },
+    {
+      "id": "area-cirugias",
+      "name": "Área de Cirugías",
+      "description": "Quirófano principal para procedimientos quirúrgicos complejos con tecnología de última generación y protocolos de máxima seguridad.",
+      "features": [
+        "Quirófano completamente esterilizado",
+        "Sistema de ventilación especializado",
+        "Iluminación quirúrgica LED",
+        "Monitorización continua",
+        "Equipos de emergencia"
+      ],
+      "image": "/images/equipo-dental.jpg",
+      "highlights": [
+        "Máximos estándares de esterilidad",
+        "Cirugías complejas seguras",
+        "Tecnología de monitorización",
+        "Protocolos de emergencia"
+      ]
+    },
+    {
+      "id": "equipo-dental-avanzado",
+      "name": "Equipo Dental Avanzado",
+      "description": "Tecnología de vanguardia que incluye escáneres intraorales, equipos láser y sistemas CAD/CAM para tratamientos de máxima precisión.",
+      "features": [
+        "Escáner intraoral 3D",
+        "Láser dental multifunción",
+        "Sistema CAD/CAM",
+        "Fotografía digital especializada",
+        "Software de planificación 3D"
+      ],
+      "image": "/images/digital-smile-design.JPG",
+      "highlights": [
+        "Tecnología sin radiación",
+        "Precisión digital máxima",
+        "Tratamientos mínimamente invasivos",
+        "Resultados predecibles"
+      ]
+    },
+    {
+      "id": "zona-esterilizacion",
+      "name": "Zona de Esterilización",
+      "description": "Área especializada para el procesado y esterilización de instrumental con los más altos estándares de seguridad e higiene.",
+      "features": [
+        "Autoclaves de última generación",
+        "Sistema de trazabilidad",
+        "Zona de descontaminación",
+        "Empaquetado estéril",
+        "Control de calidad continuo"
+      ],
+      "image": "/images/clinica-moderna_1.jpg",
+      "highlights": [
+        "Protocolo de esterilización riguroso",
+        "Trazabilidad completa del instrumental",
+        "Seguridad máxima para el paciente",
+        "Cumplimiento normativo estricto"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certificación ISO 9001:2015",
+      "description": "Sistema de gestión de calidad certificado",
+      "type": "Calidad"
+    },
+    {
+      "name": "Cumplimiento RGPD",
+      "description": "Protección de datos personales garantizada",
+      "type": "Privacidad"
+    },
+    {
+      "name": "Protocolo COVID-19",
+      "description": "Medidas de seguridad sanitaria reforzadas",
+      "type": "Seguridad"
+    },
+    {
+      "name": "Registro Sanitario",
+      "description": "Autorización oficial como centro sanitario",
+      "type": "Legal"
+    }
+  ],
+  "technology": [
+    {
+      "name": "TAC Dental 3D (CBCT)",
+      "description": "Diagnóstico tridimensional de máxima precisión",
+      "benefits": ["Planificación quirúrgica exacta", "Mínima radiación", "Diagnóstico completo"]
+    },
+    {
+      "name": "Digital Smile Design",
+      "description": "Diseño digital de sonrisa personalizada",
+      "benefits": ["Resultados predecibles", "Comunicación visual", "Personalización total"]
+    },
+    {
+      "name": "Láser Dental",
+      "description": "Tecnología láser para tratamientos precision",
+      "benefits": ["Procedimientos sin dolor", "Cicatrización rápida", "Mínimamente invasivo"]
+    },
+    {
+      "name": "Escáner Intraoral 3D",
+      "description": "Impresiones digitales sin molestias",
+      "benefits": ["Mayor comodidad", "Precisión extrema", "Proceso más rápido"]
+    }
+  ],
+  "safety_measures": [
+    "Desinfección continua de todas las superficies",
+    "Esterilización completa del instrumental",
+    "Protocolos de seguridad reforzados",
+    "Ventilación especializada en todas las salas",
+    "Control de temperatura y acceso",
+    "Equipos de protección individual",
+    "Trazabilidad completa de procesos",
+    "Formación continua del personal"
+  ],
+  "accessibility": [
+    "Acceso sin barreras arquitectónicas",
+    "Aseos adaptados para personas con movilidad reducida",
+    "Espacios amplios para sillas de ruedas",
+    "Señalización clara y visible",
+    "Personal formado en atención inclusiva",
+    "Equipamiento adaptado según necesidades",
+    "Comunicación accesible",
+    "Horarios flexibles para necesidades especiales"
+  ],
+  "virtual_tour": {
+    "available": true,
+    "description": "Realiza un recorrido virtual por nuestras instalaciones desde la comodidad de tu hogar",
+    "sections": [
+      "Recepción y salas de espera",
+      "Gabinetes de tratamiento",
+      "Área de diagnóstico por imagen",
+      "Quirófanos especializados",
+      "Zona de esterilización",
+      "Áreas comunes"
+    ]
+  },
+  "schedule_visit": {
+    "title": "Visita Nuestras Instalaciones",
+    "description": "Te invitamos a conocer personalmente nuestras instalaciones y tecnología. Agenda una visita guiada gratuita.",
+    "contact": {
+      "phone": "+34 976 123 456",
+      "email": "info@onedental-zaragoza.com",
+      "address": "Calle Ejemplo, 123, 50001 Zaragoza"
+    }
+  },
+  "metaTitle": "Instalaciones OneDental Zaragoza - Clínica Dental Moderna | Tecnología Avanzada",
+  "metaDescription": "Conoce las modernas instalaciones de OneDental Zaragoza. Tecnología de vanguardia, máxima seguridad e higiene para tu atención dental. Tour virtual disponible.",
+  "keywords": ["instalaciones clinica dental zaragoza", "tecnologia dental avanzada", "onedental instalaciones", "clinica moderna zaragoza"]
+}

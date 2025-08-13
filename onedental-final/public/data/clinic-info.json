@@ -1,0 +1,210 @@
+{
+  "clinic": {
+    "name": "OneDental",
+    "fullName": "OneDental - Clínica Dental Dr. Onésimo Fernández",
+    "description": "Especialistas en Estética Dental y Digital Smile Design en Zaragoza",
+    "tagline": "12 años transformando sonrisas con la tecnología más avanzada",
+    "founded": 2001,
+    "experience": "12+ años de experiencia",
+    "specialization": "Especialistas en prótesis desde 2001"
+  },
+  "contact": {
+    "phone": "976 527 761",
+    "email": "info@onedental.es",
+    "address": {
+      "street": "Calle de Pablo Neruda, 17",
+      "city": "Zaragoza",
+      "postalCode": "50018",
+      "country": "España"
+    },
+    "coordinates": {
+      "latitude": "41.6551",
+      "longitude": "-0.8790"
+    }
+  },
+  "schedule": {
+    "monday": "9:00-17:00",
+    "tuesday": "9:00-13:30 y 15:30-21:00",
+    "wednesday": "9:00-17:00",
+    "thursday": "9:00-13:30 y 15:30-20:00",
+    "friday": "9:00-13:00",
+    "saturday": "Cerrado",
+    "sunday": "Cerrado"
+  },
+  "team": [
+    {
+      "name": "Dr. Onésimo Fernández",
+      "position": "Director Médico",
+      "specialization": "Implanto-prótesis",
+      "education": "Licenciado Universidad Europea Madrid, Especialista implanto-prótesis UCM",
+      "experience": "Especialista en prótesis desde 2001",
+      "description": "Pionero en Digital Smile Design en Zaragoza con más de 20 años de experiencia en implantología y prótesis dentales."
+    },
+    {
+      "name": "Sara Royo",
+      "position": "Higienista Dental",
+      "experience": "Desde 2008",
+      "description": "Especialista en prevención y mantenimiento de la salud oral."
+    },
+    {
+      "name": "Ana Córdoba",
+      "position": "Higienista Dental",
+      "experience": "Desde 2015",
+      "description": "Experta en tratamientos preventivos y cuidado periodontal."
+    }
+  ],
+  "services": [
+    {
+      "category": "Estética Dental",
+      "icon": "✨",
+      "services": [
+        {
+          "name": "Digital Smile Design",
+          "description": "Diseño digital de sonrisa con tecnología 3D de vanguardia",
+          "features": ["Simulación 3D", "Previsualización del resultado", "Precisión milimétrica"],
+          "price": "Desde 1.200€"
+        },
+        {
+          "name": "Carillas de Porcelana",
+          "description": "Carillas ultrafinas que transforman tu sonrisa",
+          "features": ["Porcelana de alta calidad", "Resultado natural", "Durabilidad garantizada"],
+          "price": "Desde 450€/pieza"
+        },
+        {
+          "name": "Blanqueamiento Dental",
+          "description": "Blanqueamiento profesional seguro y efectivo",
+          "features": ["Hasta 8 tonos más blanco", "Sin sensibilidad", "Resultados inmediatos"],
+          "price": "Desde 350€"
+        }
+      ]
+    },
+    {
+      "category": "Implantes Dentales",
+      "icon": "🦷",
+      "services": [
+        {
+          "name": "Implantes Guiados por Ordenador",
+          "description": "Implantología asistida por ordenador para máxima precisión",
+          "features": ["Cirugía guiada", "Menor tiempo quirúrgico", "Mayor precisión"],
+          "price": "Desde 890€"
+        },
+        {
+          "name": "Implantes Inmediatos",
+          "description": "Implante y corona provisional en el mismo día",
+          "features": ["Una sola sesión", "Sin período de espera", "Funcionalidad inmediata"],
+          "price": "Desde 1.200€"
+        },
+        {
+          "name": "Regeneración Ósea",
+          "description": "Técnicas avanzadas de regeneración para casos complejos",
+          "features": ["Biomateriales avanzados", "Recuperación óptima", "Casos complejos"],
+          "price": "Desde 650€"
+        }
+      ]
+    },
+    {
+      "category": "Odontología Integral",
+      "icon": "🏥",
+      "services": [
+        {
+          "name": "Periodoncia",
+          "description": "Tratamiento de encías y prevención de enfermedades periodontales",
+          "features": ["Diagnóstico avanzado", "Tratamientos mínimamente invasivos", "Mantenimiento personalizado"],
+          "price": "Desde 120€"
+        },
+        {
+          "name": "Endodoncia",
+          "description": "Tratamiento de conductos con tecnología rotatoria",
+          "features": ["Técnica microscópica", "Mayor tasa de éxito", "Menor molestia"],
+          "price": "Desde 280€"
+        },
+        {
+          "name": "Ortodoncia",
+          "description": "Corrección de malposiciones dentales",
+          "features": ["Brackets metálicos/estéticos", "Ortodoncia invisible", "Tratamiento personalizado"],
+          "price": "Desde 2.500€"
+        },
+        {
+          "name": "Prótesis Dentales",
+          "description": "Prótesis fijas y removibles de alta calidad",
+          "features": ["Materiales premium", "Ajuste perfecto", "Estética natural"],
+          "price": "Desde 650€"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "María González",
+      "service": "Digital Smile Design",
+      "text": "Increíble el cambio en mi sonrisa. El Dr. Fernández me explicó todo el proceso con la simulación 3D y el resultado superó mis expectativas.",
+      "rating": 5,
+      "date": "2024-05-15"
+    },
+    {
+      "name": "Carlos Ruiz",
+      "service": "Implantes dentales",
+      "text": "Profesionalidad absoluta. Los implantes guiados por ordenador fueron un éxito total. Sin dolor y con un resultado perfecto.",
+      "rating": 5,
+      "date": "2024-04-20"
+    },
+    {
+      "name": "Ana López",
+      "service": "Carillas de porcelana",
+      "text": "Mi sonrisa cambió completamente. El equipo de OneDental es excepcional y las instalaciones son muy modernas.",
+      "rating": 5,
+      "date": "2024-03-10"
+    },
+    {
+      "name": "Javier Martín",
+      "service": "Blanqueamiento dental",
+      "text": "Resultados inmediatos y sin sensibilidad. Sara me hizo sentir muy cómodo durante todo el tratamiento.",
+      "rating": 5,
+      "date": "2024-02-28"
+    }
+  ],
+  "features": [
+    {
+      "title": "12+ Años de Experiencia",
+      "description": "Más de una década perfeccionando técnicas y cuidando sonrisas",
+      "icon": "🏆"
+    },
+    {
+      "title": "Tecnología de Vanguardia",
+      "description": "Digital Smile Design e implantes guiados por ordenador",
+      "icon": "💻"
+    },
+    {
+      "title": "Especialistas en Prótesis",
+      "description": "Especialización desde 2001 en prótesis e implantología",
+      "icon": "🎯"
+    },
+    {
+      "title": "Ubicación Privilegiada",
+      "description": "Pablo Neruda 17, fácil acceso y parking disponible",
+      "icon": "📍"
+    },
+    {
+      "title": "Primera Consulta Gratuita",
+      "description": "Diagnóstico completo sin coste y presupuesto personalizado",
+      "icon": "💝"
+    },
+    {
+      "title": "Garantía de Calidad",
+      "description": "Garantía en todos nuestros tratamientos y seguimiento post-tratamiento",
+      "icon": "✅"
+    }
+  ],
+  "certifications": [
+    "Colegio Profesional de Odontólogos de Aragón",
+    "Universidad Europea Madrid",
+    "Especialista UCM",
+    "Formación Digital Smile Design"
+  ],
+  "stats": {
+    "patientsServed": "500+",
+    "yearsExperience": "12+",
+    "successRate": "98%",
+    "teamMembers": "3"
+  }
+}

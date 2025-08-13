@@ -1,0 +1,129 @@
+{
+  "name": "OneDental Zaragoza - Clínica Dental Avanzada",
+  "short_name": "OneDental",
+  "description": "La clínica dental más avanzada de Zaragoza. Digital Smile Design, implantes, carillas y más con tecnología de vanguardia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical", "lifestyle"],
+  "lang": "es",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Primera Consulta Gratuita",
+      "short_name": "Consulta",
+      "description": "Reserva tu primera consulta gratuita",
+      "url": "/primera-consulta-gratuita",
+      "icons": [
+        {
+          "src": "/icons/shortcut-consultation.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Calculadora de Precios",
+      "short_name": "Precios",
+      "description": "Calcula el precio de tu tratamiento",
+      "url": "/calculadora-precios",
+      "icons": [
+        {
+          "src": "/icons/shortcut-calculator.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Tour Virtual",
+      "short_name": "Tour",
+      "description": "Explora nuestras instalaciones",
+      "url": "/tour-virtual",
+      "icons": [
+        {
+          "src": "/icons/shortcut-tour.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Urgencias Dentales",
+      "short_name": "Urgencias",
+      "description": "Información para emergencias dentales",
+      "url": "/urgencias-dentales",
+      "icons": [
+        {
+          "src": "/icons/shortcut-emergency.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/mobile-home.png",
+      "sizes": "360x640",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

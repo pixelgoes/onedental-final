@@ -1,0 +1,42 @@
+[
+  {
+    "id": "estetica-dental",
+    "name": "Estética Dental",
+    "slug": "estetica-dental",
+    "description": "Todo sobre tratamientos estéticos, carillas, blanqueamientos y Digital Smile Design",
+    "color": "#e91e63",
+    "icon": "Sparkles"
+  },
+  {
+    "id": "implantes",
+    "name": "Implantes",
+    "slug": "implantes",
+    "description": "Información completa sobre implantes dentales, cirugía y cuidados",
+    "color": "#2196f3",
+    "icon": "Wrench"
+  },
+  {
+    "id": "cuidado-oral",
+    "name": "Cuidado Oral",
+    "slug": "cuidado-oral",
+    "description": "Consejos de higiene, prevención y mantenimiento de la salud dental",
+    "color": "#4caf50",
+    "icon": "Heart"
+  },
+  {
+    "id": "tecnologia",
+    "name": "Tecnología",
+    "slug": "tecnologia",
+    "description": "Las últimas innovaciones en odontología y tecnología dental",
+    "color": "#ff9800",
+    "icon": "Cpu"
+  },
+  {
+    "id": "tratamientos",
+    "name": "Tratamientos",
+    "slug": "tratamientos",
+    "description": "Procedimientos dentales, endodoncias, ortodoncia y más",
+    "color": "#9c27b0",
+    "icon": "Activity"
+  }
+]
